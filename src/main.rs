@@ -9,7 +9,8 @@ fn main() {
     // Calculate amounts
     let nicotine_base_amount = calculate_nicotine_base_amount(base_amount, target_nicotine, target_volume);
     let flavoring_amount = calculate_flavoring_amount(target_volume);
-    let diluent_amount = calculate_diluent_amount(base_amount, nicotine_base_amount, flavoring_amount, target_volume);
+    let diluent_amount = calculate_diluent_amount(
+        base_amount, nicotine_base_amount, flavoring_amount, target_volume);
 
     // Display results
     println!("Nicotine Base Amount: {} ml", nicotine_base_amount);
@@ -39,7 +40,8 @@ fn calculate_flavoring_amount(target_volume: f64) -> f64 {
     0.05 * target_volume
 }
 
-fn calculate_diluent_amount(base_amount: f64, nicotine_base_amount: f64, flavoring_amount: f64, target_volume: f64) -> f64 {
+fn calculate_diluent_amount(
+    base_amount: f64, nicotine_base_amount: f64, flavoring_amount: f64, target_volume: f64) -> f64 {
     target_volume - (base_amount + nicotine_base_amount + flavoring_amount)
 }
 
