@@ -3,4 +3,4 @@ ejuice calculator
 -----------------
  A simple ejuice making calculator. This is a work in progress so not for use yet.
 
-The nicotine amount needs fixed.
+The nicotine messurement needs fixed.
