@@ -7,7 +7,8 @@ fn main() {
     let target_volume = get_user_input("Enter the target final volume (in ml):");
 
     // Calculate amounts
-    let nicotine_base_amount = calculate_nicotine_base_amount(base_amount, target_nicotine, target_volume);
+    let nicotine_base_amount = calculate_nicotine_base_amount(
+        base_amount, target_nicotine, target_volume);
     let flavoring_amount = calculate_flavoring_amount(target_volume);
     let diluent_amount = calculate_diluent_amount(
         base_amount, nicotine_base_amount, flavoring_amount, target_volume);
