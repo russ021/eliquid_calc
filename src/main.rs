@@ -35,7 +35,7 @@ fn get_user_input(prompt: &str) -> f64 {
 // Corrected nicotine calculation function
 fn calculate_nicotine_base_amount(
     base_amount: f64, target_nicotine: f64, target_volume: f64, nicotine_base_strength: f64) -> f64 {
-    (target_nicotine * target_volume) / nicotine_base_strength
+    (target_nicotine * target_volume - base_amount * target_nicotine) / nicotine_base_strength
 }
 
 fn calculate_flavoring_amount(target_volume: f64) -> f64 {
