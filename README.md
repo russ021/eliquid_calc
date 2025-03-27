@@ -1,4 +1,4 @@
 # eliquid_calc
 ejuice calculator
 -----------------
- A simple ejuice cli app for making ejuice. 
+ A simple cli app for making ejuice. 
